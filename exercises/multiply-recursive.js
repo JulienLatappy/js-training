@@ -11,19 +11,18 @@
 
 // Your code :
 
+let i = 0;
+let result = 0;
 function multiply (number1, number2) {
-    let i = 0;
-    let result = 0;
-    if ( i < number1 ){
-        i++;
-        result = result + number2;
-        multiply(number1, number2);
-    }
-    else {
-  	    return result;
-    }
+  if ( i < 10 ){
+  	i++;
+    result = result + nb2;
+    multiply(nb1, nb2);
+  }
+  else {
+  	return result;
+  }
 }
-
 //* Begin of tests
 const assert = require('assert')
 
