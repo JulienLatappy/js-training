@@ -11,19 +11,25 @@
 
 // Your code :
 
-let i = 0;
-let result = 0;
+
+
 function multiply (number1, number2) {
-  if ( i < 10 ){
-  	i++;
-    result = result + nb2;
-    multiply(nb1, nb2);
-  }
-  else {
-  	return result;
-  }
+  let result = 0;
+    if ( number2 > 0){
+      result = number1 + multiply(number1, number2 -1); 
+    }if (number2 < 0){
+      result = multiply(number1, number2 +1) -number1;
+    }return result;
 }
-//* Begin of tests
+
+
+
+
+
+
+
+
+
 const assert = require('assert')
 
 assert.strictEqual(typeof multiply, 'function')
